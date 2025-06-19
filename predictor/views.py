@@ -1,6 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .ml_logic import predict_crop_fertilizer
+from django.http import HttpResponse
 
 @api_view(['POST'])
 def predict_view(request):
@@ -12,3 +13,8 @@ def predict_view(request):
     result = predict_crop_fertilizer(request.data)
 
     return Response(result)
+
+def ping(request):
+    return HttpResponse("pong")
+
+
