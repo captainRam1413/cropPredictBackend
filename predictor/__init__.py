@@ -1,1 +1,1 @@
-default_app_config = 'yourapp.apps.YourAppConfig'
+default_app_config = 'predictor.apps.PredictorConfig'
