@@ -1,6 +1,8 @@
 ﻿# 🌾 [Crop & Fertilizer Prediction Backend](https://crop-predict-frontend.vercel.app/)
 
-Welcome to the [**Crop & Fertilizer Prediction Backend**](https://crop-predict-frontend.vercel.app/) — an intelligent agricultural recommendation system powered by machine learning and Django REST API. [Demo](https://crop-predict-frontend.vercel.app/)  [**Frontend repo**](https://github.com/captainRam1413/cropPredictFrontend)
+Welcome to the [**Crop & Fertilizer Prediction Backend**](https://crop-predict-frontend.vercel.app/) — an intelligent agricultural recommendation system powered by machine learning and Django REST API. 
+[Demo](https://crop-predict-frontend.vercel.app/)  
+[**Frontend repo**](https://github.com/captainRam1413/cropPredictFrontend)
 
 ---
 
