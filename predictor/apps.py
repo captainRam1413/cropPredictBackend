@@ -8,7 +8,7 @@ def self_ping():
     while True:
         try:
             # Use your actual domain in production
-            requests.get("http://localhost:8000/ping/")
+            requests.get("http://localhost:8000/ping")
         except Exception as e:
             print("Self-ping failed:", e)
         time.sleep(300)  # 5 minutes
