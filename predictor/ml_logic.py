@@ -72,7 +72,7 @@ def predict_crop_fertilizer(data):
         return {
             "predicted_crop": crop,
             "predicted_fertilizer": fert,
-            # "advice": advice
+            "advice": advice
         }
 
     except Exception as e:
