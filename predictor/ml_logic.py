@@ -7,7 +7,8 @@ import google.generativeai as genai
 from google import genai
 from google.generativeai import types
 
-client = genai.Client(api_key="AIzaSyALQTiFY8OX5wuoBER6bTkC90NnV77tv4s")
+client = genai.Client(api_key="AIzaSyAnvJpXEDgZgDJjZUW9egmwYhCWhb0bXxA")
+# client = genai.Client(api_key="AIzaSyALQTiFY8OX5wuoBER6bTkC90NnV77tv4s")
 # Load files
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # model = joblib.load(os.path.join(BASE_DIR, 'models/model_tuned.pkl'))
@@ -65,13 +66,13 @@ def predict_crop_fertilizer(data):
             'predicted_crop': crop,
             'predicted_fertilizer': fert
         }
-        advice = get_gemini_advice(input_data, predicted_data)
+        # advice = get_gemini_advice(input_data, predicted_data)
         print(f"Predicted crop: {crop}, Predicted fertilizer: {fert}")
 
         return {
             "predicted_crop": crop,
             "predicted_fertilizer": fert,
-            "advice": advice
+            # "advice": advice
         }
 
     except Exception as e:
@@ -104,7 +105,7 @@ def get_gemini_advice(input_data, predicted_data):
         - Crop: **{predicted_data['predicted_crop']}**
         - Fertilizer: **{predicted_data['predicted_fertilizer']}**
 
-        As an expert, provide a short, practical advisory (3–4 sentences) that includes:
+        As an expert, provide a short, practical advisory (3-4 sentences) that includes:
         1. Specific guidance for preparing the soil and using the recommended fertilizer.
         2. Tips for successfully cultivating the predicted crop in these conditions.
         3. If the prediction seems suboptimal based on soil chemistry or weather, suggest a more suitable crop/fertilizer or additional amendments (e.g., composting, micronutrients, irrigation scheduling).
