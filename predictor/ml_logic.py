@@ -66,7 +66,7 @@ def predict_crop_fertilizer(data):
             'predicted_crop': crop,
             'predicted_fertilizer': fert
         }
-        # advice = get_gemini_advice(input_data, predicted_data)
+        advice = get_gemini_advice(input_data, predicted_data)
         print(f"Predicted crop: {crop}, Predicted fertilizer: {fert}")
 
         return {
